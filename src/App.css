@@ -26,12 +26,15 @@
   backdrop-filter: blur(10px);
   transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
   border: 1px solid rgb(255, 255, 255);
+  background: linear-gradient(135deg, #002f22, #00a9a3);
+  color: black;
 }
 
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-  background: linear-gradient(135deg, #946500, #946500);
+  background: linear-gradient(135deg, #10adc9, #000000);
+  color: white;
 }
 
 /* Image Styling */
@@ -102,22 +105,22 @@
   padding: 10px;
   margin: 20px auto;
   display: block;
-  border: 2px solid white;
+  border: 2px solid rgb(0, 0, 0);
   border-radius: 25px;
   font-size: 1rem;
   text-align: center;
-  color: white;
-  background: rgba(255, 255, 255, 0.1);
+  color: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(10px);
 }
 
 .search-bar::placeholder {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .search-bar:focus {
   outline: none;
-  border-color: gold;
+  border-color: rgb(0, 0, 0);
 }
 
 /* Responsive Design */
@@ -141,7 +144,7 @@
   }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 500px) {
   .card-container {
     grid-template-columns: 1fr;
     /* One column on very small screens */
