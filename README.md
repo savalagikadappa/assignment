@@ -11,8 +11,7 @@ Welcome to **Beer Explorer**, a React-powered web app that fetches and displays 
 
 ## 🚀 Live Demo
 
-The project is hosted on **Vercel** for seamless access: 🔗 [Live Demo Here]([https://your-vercel-deployment-link.vercel.app](https://assignment2-woad-one.vercel.app))
-
+The project is hosted on **Vercel** for seamless access: 🔗 [Live Demo Here](https://assignment2-woad-one.vercel.app)
 ## 📸 Preview
 
 ![Preview of website Dashboard](demo.png)
