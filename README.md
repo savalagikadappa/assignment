@@ -1,12 +1,57 @@
-# React + Vite
+# Beer Explorer 🍻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to **Beer Explorer**, a React-powered web app that fetches and displays a collection of ales using data from the [Sample Beers API](https://api.sampleapis.com/beers/ale). This app features a responsive UI with a card layout, search functionality, and a sleek design.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Dynamic API Fetching**: Real-time beer data from an external API.
+- **Interactive Search**: Filter beers by name as you type.
+- **Responsive Design**: Works seamlessly across devices.
+- **Modern UI**: Styled cards showcasing beer images, names, prices, and ratings.
 
-## Expanding the ESLint configuration
+## 🚀 Live Demo
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+The project is hosted on **Vercel** for seamless access: 🔗 [Live Demo Here]([https://your-vercel-deployment-link.vercel.app](https://assignment2-woad-one.vercel.app))
+
+## 📸 Preview
+
+![Preview of website Dashboard](demo.png)
+
+## 🛠️ Installation
+
+To run the project locally, follow these steps:
+
+```bash
+# Clone the repository
+git clone https://github.com/savalagikadappa/assignment.git
+
+# Navigate into the project folder
+cd assignment
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
+```
+
+## 📂 Tech Stack
+
+- **React.js** - Frontend framework
+- **Axios** - API fetching
+- **CSS** - Styled components
+- **Vercel** - Deployment
+
+## 🎯 How It Works
+
+1. Fetches beer data from [Sample Beers API](https://api.sampleapis.com/beers/ale).
+2. Displays beers in stylish cards with images and details.
+3. Users can search for specific beers.
+4. Fully responsive and optimized UI.
+
+## 🤝 Contributing
+
+Feel free to fork the repo and submit pull requests! 🎉
+
+🚀 **Built with React, API Integration, and Passion for Beers!** 🍺
+
