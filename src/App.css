@@ -1,0 +1,162 @@
+/* Card Container: Grid Layout */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 75px;
+  padding: 20px;
+  justify-content: center;
+  align-items: stretch;
+
+  /* Ensures all cards align properly */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  /* Subtle glass effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #946500, #946500);
+}
+
+/* Image Styling */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover img {
+  transform: scale(1.03);
+}
+
+/* Title */
+.card h2 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #ffffff;
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover h2 {
+  color: white;
+}
+
+/* Description */
+.card p {
+  font-size: 1rem;
+  color: #ffffff;
+  opacity: 0.8;
+  transition: color 0.3s ease-in-out;
+}
+
+.card:hover p {
+  color: white;
+}
+
+/* Cool Button */
+.card .btn {
+  display: inline-block;
+  padding: 10px 18px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.card .btn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.1);
+  box-shadow: 0 4px 10px rgba(37, 117, 252, 0.5);
+}
+
+
+
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px;
+  margin: 20px auto;
+  display: block;
+  border: 2px solid white;
+  border-radius: 25px;
+  font-size: 1rem;
+  text-align: center;
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.search-bar::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: gold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .card h2 {
+    font-size: 1rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .card-container {
+    grid-template-columns: 1fr;
+    /* One column on very small screens */
+  }
+
+  .card {
+    max-width: 100%;
+    padding: 12px;
+  }
+
+  .card h2 {
+    font-size: 0.9rem;
+  }
+
+  .card p {
+    font-size: 0.85rem;
+  }
+}

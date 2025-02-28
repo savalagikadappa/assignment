@@ -1,0 +1,30 @@
+.stars {
+    display: flex;
+    justify-content: center;
+    margin: 8px 0;
+}
+
+.star {
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    /* Default empty star */
+}
+
+.star.full {
+    color: gold;
+    /* Fully filled stars */
+}
+
+.star.half {
+    background: linear-gradient(90deg, gold 50%, rgb(0, 0, 0) 50%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    /* For Chrome, Safari */
+    -moz-background-clip: text;
+    /* For Firefox */
+    -o-background-clip: text;
+    /* For Opera */
+    -ms-background-clip: text;
+    /* For IE/Edge */
+    -webkit-text-fill-color: transparent;
+}
